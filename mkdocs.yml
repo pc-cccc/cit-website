@@ -1,0 +1,36 @@
+site_name: 长沙工业学院会计协会
+site_description: 长沙工业学院会计协会（CIT）官方网站 —— 社团介绍、课程资源、交流互动
+# 部署到 GitHub Pages 后再填，用于 SEO 和站点地图，本地先注释掉
+# site_url: https://<你的GitHub用户名>.github.io/<仓库名>/
+
+theme:
+  name: material
+  language: zh                        # 界面语言：中文
+  palette:                            # 浅色 / 深色模式切换按钮
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: 切换到深色模式
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到浅色模式
+  features:
+    - navigation.tabs                 # 顶部标签式导航
+    - navigation.top                  # 回到顶部按钮
+    - search.suggest                  # 搜索联想建议
+    - content.code.copy               # 代码块一键复制
+
+nav:
+  - 首页: index.md
+  - 社团介绍:
+      - 协会章程: about/charter.md
+      - 部门介绍: about/departments.md
+  - 课程资源:
+      - 会计基础: courses/accounting-basics.md
+      - 考证经验: courses/certificates.md
+
+markdown_extensions:
+  - admonition                        # 提示框
+  - pymdownx.highlight
+  - pymdownx.superfences
